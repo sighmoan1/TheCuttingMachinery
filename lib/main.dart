@@ -179,6 +179,36 @@ class MeditationApp extends StatelessWidget {
 class MeditationModel extends ChangeNotifier {
   Meditation? _selectedMeditation;
   Meditation? get selectedMeditation => _selectedMeditation;
+  List<PlaylistItem> _playlist = [];
+  List<PlaylistItem> get playlist => _playlist;
+
+  void addToPlaylist(PlaylistItem item) {
+    _playlist.add(item);
+    notifyListeners();
+  }
+
+  void removeFromPlaylist(int index) {
+    _playlist.removeAt(index);
+    notifyListeners();
+  }
+
+  void reorderPlaylist(int oldIndex, int newIndex) {
+    if (oldIndex < newIndex) {
+      newIndex -= 1;
+    }
+    final PlaylistItem item = _playlist.removeAt(oldIndex);
+    _playlist.insert(newIndex, item);
+    notifyListeners();
+  }
+
+  void updateSilenceDuration(int index, Duration duration) {
+    _playlist[index] = PlaylistItem(
+      meditation: _playlist[index].meditation,
+      silenceDuration: duration,
+    );
+    notifyListeners();
+  }
+
   void selectMeditation(Meditation meditation) {
     _selectedMeditation = meditation;
     notifyListeners();
@@ -223,4 +253,11 @@ class Statistic {
   DateTime? lastUpdated;
 
   Statistic({required this.streakDays, this.lastUpdated});
+}
+
+class PlaylistItem {
+  final Meditation meditation;
+  final Duration silenceDuration;
+
+  PlaylistItem({required this.meditation, required this.silenceDuration});
 }
