@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "277214271986",
+    "project_id": "the-cutting-machinery",
+    "storage_bucket": "the-cutting-machinery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277214271986:android:4a71f532932f01a780f36b",
+        "android_client_info": {
+          "package_name": "com.example.the_cutting_machinery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277214271986-4c4j16rff64ke0sjg733upbodacpfkbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIREVjudqvhstyWCD86HVo3fzIOhyXIuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277214271986-4c4j16rff64ke0sjg733upbodacpfkbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
