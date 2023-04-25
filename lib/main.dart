@@ -7,6 +7,7 @@ import 'models/meditation.dart';
 import 'data/meditations.dart';
 import 'widgets/player.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:intl/intl.dart';
 
 Future<void> main() async {
   runApp(
@@ -67,6 +68,11 @@ class MeditationApp extends StatelessWidget {
                       'Streak Days: ${meditationModel.statistic.streakDays}',
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     ),
+                    if (meditationModel.statistic.lastUpdated != null)
+                      Text(
+                        'Last Updated: ${DateFormat.Hms().format(meditationModel.statistic.lastUpdated!)}',
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -185,13 +191,20 @@ class MeditationModel extends ChangeNotifier {
   Future<void> _loadStatistic() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int streakDays = prefs.getInt('streakDays') ?? 0;
-    _statistic = Statistic(streakDays: streakDays);
+    String? lastUpdatedString = prefs.getString('lastUpdated');
+    DateTime? lastUpdated =
+        lastUpdatedString != null ? DateTime.parse(lastUpdatedString) : null;
+    _statistic = Statistic(streakDays: streakDays, lastUpdated: lastUpdated);
     notifyListeners();
   }
 
   Future<void> _saveStatistic() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('streakDays', _statistic.streakDays);
+    if (_statistic.lastUpdated != null) {
+      await prefs.setString(
+          'lastUpdated', _statistic.lastUpdated!.toIso8601String());
+    }
   }
 
   Statistic _statistic = Statistic(streakDays: 0);
@@ -199,6 +212,7 @@ class MeditationModel extends ChangeNotifier {
 
   void updateStatistic(int lifetimeHoursChange, int streakDaysChange) {
     _statistic.streakDays = max(0, _statistic.streakDays + streakDaysChange);
+    _statistic.lastUpdated = DateTime.now();
     _saveStatistic();
     notifyListeners();
   }
@@ -206,6 +220,7 @@ class MeditationModel extends ChangeNotifier {
 
 class Statistic {
   int streakDays;
+  DateTime? lastUpdated;
 
-  Statistic({required this.streakDays});
+  Statistic({required this.streakDays, this.lastUpdated});
 }
