@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "277214271986",
+    "firebase_url": "https://the-cutting-machinery-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "the-cutting-machinery",
     "storage_bucket": "the-cutting-machinery.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "277214271986-4c4j16rff64ke0sjg733upbodacpfkbp.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "277214271986-qs739mofebnadl23liihu2lf1jkp2dtc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theCuttingMachinery"
+              }
             }
           ]
         }
