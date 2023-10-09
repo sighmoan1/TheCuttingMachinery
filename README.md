@@ -1,17 +1,9 @@
-# the_cutting_machinery
+# The Cutting Machinery
 
-A new Flutter project.
+[The Cutting Machinery](http://thecuttingmachinery.com/) was a meditation app which taught a very simple, fairly stable, introductory meditation technique for people who are serious about getting to enlightenment. The technique was developed by [Vinay Gupta](https://twitter.com/leashless) of [The Hexayurt Project](http://hexayurt.com/).
 
-## Getting Started
+The app stopped being available for obscure reasons, and the audio files were made available for download.
 
-This project is a starting point for a Flutter application.
+Due to the invention of [Flutter](https://en.wikipedia.org/wiki/Flutter_(software)) and [https://openai.com/gpt-4](GPT-4), an app user with no software development experience was able to create a version of the app - and here it is in this repo. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# TheCuttingMachinery
+If you want to support Vinay's work, build a hexayurt. If you want to support the app user's work, donate to [Action for Child Trauma International](https://actinternational.org.uk/). 
