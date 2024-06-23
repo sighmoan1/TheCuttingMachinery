@@ -4,8 +4,6 @@
 
 The app stopped being available and the audio files were made available for download. I've made a worse version of the app that can still be used.
 
-If you want to support Vinay's work, build a hexayurt. If you want to support the app user's work, donate to [Action for Child Trauma International](https://actinternational.org.uk/). 
-
 # More info
 There are transcripts of some talks given by Vinay here that you may find useful: [Meditation Talks](http://files.howtolivewiki.com/.meditation_2015/transcripts/Vinay%20Gupta%20on%20Meditation.pdf)
 
