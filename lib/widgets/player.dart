@@ -168,7 +168,7 @@ class _MeditationPlayerState extends State<MeditationPlayer> {
             _seekSubject.add(_position);
           },
           activeColor: Colors.white,
-          inactiveColor: Colors.white.withOpacity(0.5),
+          inactiveColor: Colors.grey,
         ),
       ],
     );
