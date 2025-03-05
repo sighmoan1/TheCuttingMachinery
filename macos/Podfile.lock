@@ -1,100 +1,97 @@
 PODS:
-  - audio_service (0.14.1):
+  - audio_service (0.0.1):
+    - Flutter
     - FlutterMacOS
   - audio_session (0.0.1):
     - FlutterMacOS
-  - audioplayers (0.0.1):
+  - audioplayers_darwin (0.0.1):
     - FlutterMacOS
-  - Firebase/CoreOnly (10.7.0):
-    - FirebaseCore (= 10.7.0)
-  - firebase_core (2.10.0):
-    - Firebase/CoreOnly (~> 10.7.0)
+  - Firebase/CoreOnly (11.8.1):
+    - FirebaseCore (~> 11.8.1)
+  - firebase_core (3.12.1):
+    - Firebase/CoreOnly (~> 11.8.0)
     - FlutterMacOS
-  - FirebaseCore (10.7.0):
-    - FirebaseCoreInternal (~> 10.0)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/Logger (~> 7.8)
-  - FirebaseCoreInternal (10.8.0):
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseCore (11.8.1):
+    - FirebaseCoreInternal (~> 11.8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
+  - FirebaseCoreInternal (11.8.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.0)"
   - FlutterMacOS (1.0.0)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
-  - GoogleUtilities/Environment (7.11.1):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.11.1):
+  - GoogleUtilities/Environment (8.0.2):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.0.2):
     - GoogleUtilities/Environment
-  - "GoogleUtilities/NSData+zlib (7.11.1)"
+    - GoogleUtilities/Privacy
+  - "GoogleUtilities/NSData+zlib (8.0.2)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.0.2)
   - just_audio (0.0.1):
+    - Flutter
     - FlutterMacOS
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - PromisesObjC (2.2.0)
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - sqflite (0.0.2):
+  - sqflite_darwin (0.0.4):
+    - Flutter
     - FlutterMacOS
-    - FMDB (>= 2.7.5)
 
 DEPENDENCIES:
-  - audio_service (from `Flutter/ephemeral/.symlinks/plugins/audio_service/macos`)
+  - audio_service (from `Flutter/ephemeral/.symlinks/plugins/audio_service/darwin`)
   - audio_session (from `Flutter/ephemeral/.symlinks/plugins/audio_session/macos`)
-  - audioplayers (from `Flutter/ephemeral/.symlinks/plugins/audioplayers/macos`)
+  - audioplayers_darwin (from `Flutter/ephemeral/.symlinks/plugins/audioplayers_darwin/macos`)
   - firebase_core (from `Flutter/ephemeral/.symlinks/plugins/firebase_core/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
-  - just_audio (from `Flutter/ephemeral/.symlinks/plugins/just_audio/macos`)
-  - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/macos`)
-  - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/macos`)
-  - sqflite (from `Flutter/ephemeral/.symlinks/plugins/sqflite/macos`)
+  - just_audio (from `Flutter/ephemeral/.symlinks/plugins/just_audio/darwin`)
+  - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
+  - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - sqflite_darwin (from `Flutter/ephemeral/.symlinks/plugins/sqflite_darwin/darwin`)
 
 SPEC REPOS:
   trunk:
     - Firebase
     - FirebaseCore
     - FirebaseCoreInternal
-    - FMDB
     - GoogleUtilities
-    - PromisesObjC
 
 EXTERNAL SOURCES:
   audio_service:
-    :path: Flutter/ephemeral/.symlinks/plugins/audio_service/macos
+    :path: Flutter/ephemeral/.symlinks/plugins/audio_service/darwin
   audio_session:
     :path: Flutter/ephemeral/.symlinks/plugins/audio_session/macos
-  audioplayers:
-    :path: Flutter/ephemeral/.symlinks/plugins/audioplayers/macos
+  audioplayers_darwin:
+    :path: Flutter/ephemeral/.symlinks/plugins/audioplayers_darwin/macos
   firebase_core:
     :path: Flutter/ephemeral/.symlinks/plugins/firebase_core/macos
   FlutterMacOS:
     :path: Flutter/ephemeral
   just_audio:
-    :path: Flutter/ephemeral/.symlinks/plugins/just_audio/macos
+    :path: Flutter/ephemeral/.symlinks/plugins/just_audio/darwin
   path_provider_foundation:
-    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/macos
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
   shared_preferences_foundation:
-    :path: Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/macos
-  sqflite:
-    :path: Flutter/ephemeral/.symlinks/plugins/sqflite/macos
+    :path: Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin
+  sqflite_darwin:
+    :path: Flutter/ephemeral/.symlinks/plugins/sqflite_darwin/darwin
 
 SPEC CHECKSUMS:
-  audio_service: b88ff778e0e3915efd4cd1a5ad6f0beef0c950a9
-  audio_session: dea1f41890dbf1718f04a56f1d6150fd50039b72
-  audioplayers: 8b48e22684b6e0d9df143b2d1bbd61dca9dab6b4
-  Firebase: 0219acf760880eeec8ce479895bd7767466d9f81
-  firebase_core: 104c957652eab7d9d9c779102f509714a56ad382
-  FirebaseCore: e317665b9d744727a97e623edbbed009320afdd7
-  FirebaseCoreInternal: fa2899eb1f340054858d289e5a0fb935a0a74e52
+  audio_service: aa99a6ba2ae7565996015322b0bb024e1d25c6fd
+  audio_session: eaca2512cf2b39212d724f35d11f46180ad3a33e
+  audioplayers_darwin: 761f2948df701d05b5db603220c384fb55720012
+  Firebase: 973c28133496aab0223e9ea99f0abafb9f91ad58
+  firebase_core: 3dcdf8453dfb144a023ee70f49e0463b97177f71
+  FirebaseCore: 99fe0c4b44a39f37d99e6404e02009d2db5d718d
+  FirebaseCoreInternal: df24ce5af28864660ecbd13596fc8dd3a8c34629
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
-  just_audio: 9b67ca7b97c61cfc9784ea23cd8cc55eb226d489
-  path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
-  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
-  shared_preferences_foundation: 986fc17f3d3251412d18b0265f9c64113a8c2472
-  sqflite: a5789cceda41d54d23f31d6de539d65bb14100ea
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+  just_audio: 4e391f57b79cad2b0674030a00453ca5ce817eed
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+  sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
 
-PODFILE CHECKSUM: 353c8bcc5d5b0994e508d035b5431cfe18c1dea7
+PODFILE CHECKSUM: 10b11a860ef28b933795c1c1f54fe0fbd08cfabb
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.16.2
